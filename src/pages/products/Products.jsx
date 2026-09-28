@@ -22,15 +22,16 @@ export default function Products() {
         return <h2>Loading...</h2>
     if (error)
         return <h2>{error}</h2>
-return (
+
+    return (
     <>
-    <section className='products'>
-        <h2>Products</h2>
-        {products.map((product) => 
-            <div className='product'>
-                <h3>{product.title}</h3>
-            </div> )}
-    </section>
+        <section className='products'>
+            <h2>Products</h2>
+            {products.map((product) => 
+                <div className='product'>
+                    <h3>{product.title}</h3>
+                </div> )}
+        </section>
     </>  
   )
 }
